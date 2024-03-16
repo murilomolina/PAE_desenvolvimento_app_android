@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Volume"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Raio da Esfera"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/raio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.0"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        ></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Largura do Cubo"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/largura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.0"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        ></EditText>
+
+    <Button
+        android:id="@+id/botao1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Calcular Volume da esfera"></Button>
+
+    <Button
+        android:id="@+id/botao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Volume do cubo"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        ></Button>
+
+    <TextView
+        android:id="@+id/resposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resposta:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        ></TextView>
+
+</LinearLayout>
