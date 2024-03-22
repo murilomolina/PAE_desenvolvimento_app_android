@@ -12,9 +12,11 @@ public class MainActivity extends AppCompatActivity {
     private EditText raio;
     private EditText largura;
     private TextView resposta;
-    private Button botao1;
-    private Button botao2;
+    private Button botaoVolumeEsfera;
+    private Button botaoVolumeCubo;
+    private Button botaoPerimetroEsfera;
     private double x;
+    private double r;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +26,13 @@ public class MainActivity extends AppCompatActivity {
         // Vincular os elementos da tela com as variaveis
         raio = findViewById(R.id.raio);
         largura = findViewById(R.id.largura);
-        botao1 = findViewById(R.id.botao1);
-        botao2 = findViewById(R.id.botao2);
+        botaoVolumeEsfera = findViewById(R.id.botaoVolumeEsfera);
+        botaoVolumeCubo = findViewById(R.id.botaoVolumeCubo);
+        botaoPerimetroEsfera = findViewById((R.id.botaoPerimetroEsfera));
         resposta = findViewById(R.id.resposta);
 
-        //rotina botão 1
-        botao1.setOnClickListener(new View.OnClickListener() {
+        //rotina botaoVolumeEsfera
+        botaoVolumeEsfera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Calculo do volume da esfera
@@ -39,14 +42,25 @@ public class MainActivity extends AppCompatActivity {
                 resposta.setText(String.valueOf(x));
             }
         });
-        //rotina botão 2
-        botao2.setOnClickListener(new View.OnClickListener() {
+        //rotina botaoVolumeCubo
+        botaoVolumeCubo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Calculo do volume do CUBO
-                x = Double.parseDouble(largura.getText().toString());
-                x = x*x*x;
+                r = Double.parseDouble(largura.getText().toString());
+                x = r*r*r;
                 // exibindo a resposta
+                resposta.setText(String.valueOf(x));
+            }
+        });
+
+        // rotina botaoPerimetroEsfera
+        botaoPerimetroEsfera.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                // calculo do perimetro da esfera
+                r = Double.parseDouble(raio.getText().toString());
+                x = 2*Math.PI*r;
                 resposta.setText(String.valueOf(x));
             }
         });
