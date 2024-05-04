@@ -9,14 +9,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText raio;
+    private EditText raio; // proveniente da entrada da esfera, porem utilizado no calculo do circulo
     private EditText largura;
     private TextView resposta;
     private Button botaoVolumeEsfera;
     private Button botaoVolumeCubo;
     private Button botaoPerimetroEsfera;
-    private double x;
-    private double r;
+    private double x; // variavel criada para utilizar como atribuição do valor que será exibido na resposta
+    private double r; // variavel para chamar o valor do raio
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,14 +54,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // rotina botaoPerimetroEsfera
+        // rotina botaoPerimetroEsfera MUDAR PARA botaoPerimetroCirculo.
         botaoPerimetroEsfera.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 // calculo do perimetro da esfera
                 r = Double.parseDouble(raio.getText().toString());
                 x = 2*Math.PI*r;
-                resposta.setText(String.valueOf(x));
+                resposta.setText(String.valueOf(x)); // definir limite de casas decimais
             }
         });
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10"
+    >
+
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/android_azul"
+        android:layout_gravity="center_horizontal">
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/girar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+
+
+        android:text="girar">
+    </Button>
+
+    <Button
+        android:id="@+id/alfa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+
+        android:text="Alfa">
+    </Button>
+
+    <Button
+        android:id="@+id/deslocar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+
+        android:text="Deslocar">
+    </Button>
+
+    <Button
+        android:id="@+id/escala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+
+
+        android:text="Escala">
+    </Button>
+
+    <ImageView
+        android:id="@+id/imagem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/android"
+        android:layout_gravity="center_horizontal">
+    </ImageView>
+
+
+
+
+</LinearLayout>
